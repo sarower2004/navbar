@@ -1,0 +1,53 @@
+:root {
+ --primary-color: #20B2AA;
+ --secondary-color: #40E0D0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu_bar {
+    width: 100%;
+    background-color: var(--primary-color)
+
+}
+
+.menu_bar ol {
+    list-style: none;
+    display: flex;
+}
+.menu_bar ol li{
+    width: 90px;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.menu_bar ol li:hover{
+    background-color: var(--secondary-color);
+}
+
+
+a {
+    color: white;
+    align-content: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 320px) {
+
+    .menu_bar ol{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_bar ol li:hover{
+        width: 100%;
+        background-color: red;
+    }
+
+
+}
+
